@@ -1,37 +1,27 @@
-## Welcome to GitHub Pages
+## Bem vindo ao repositório do Curso de desenvolvedores C#
 
-You can use the [editor on GitHub](https://github.com/diogocsbr/curso-desenvolvedor-csharp/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+A idéia do curso é ajudar a todos que desejam aprender a linguagem c#, as aulas serão realizadas em live no canal xDIDAdev da [twitch](twitch.tv/xdidadev) às quartas-19h e aos sábados-14h, para acompanhar os vídeos gravados fique atento a tabela de vídeos. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Esse repositório será utilizado para compartilharmos os códigos que iremos produzir no curso.
 
-### Markdown
+### Contribuindo com o projeto
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+* [Diogo Costa 'xDIDAdev'](https://twitter.com/diogotj)
 
-```markdown
-Syntax highlighted code block
+Quero ser um contribuidor para o curso c#, como faço? [clica aqui e pede informações](mailto:diogo@codigocentral.com.br)
 
-# Header 1
-## Header 2
-### Header 3
+### Pré-requisitos
 
-- Bulleted
-- List
+Para esse curso utilizaremos.
+Vontade de aprender
+Seu computador com sistema operaional Windows
+Ferramentas para codificar ( Bloco de notas, [Visual Code](https://code.visualstudio.com/), [Visual Studio](https://visualstudio.microsoft.com/pt-br/vs/community/) ) - escolha uma ;)
+Versão do SDK Framework
 
-1. Numbered
-2. List
+### O que vou aprender?
 
-**Bold** and _Italic_ and `Code` text
+Vai aprender a desenvolver com a linguagem c#, o foco principal do curso é mostrar como a linguagem funciona e como podemos utilizar ela da melhor maneira.
 
-[Link](url) and ![Image](src)
-```
+## Tenho Dúvidas... O que Faço?!
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/diogocsbr/curso-desenvolvedor-csharp/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Caso tenham dúvidas aos códigos desenvolvidos durante a série de artigos, sintam-se a vontade em abrir uma [ISSUE AQUI](https://github.com/diogocsbr/curso-desenvolvedor-csharp/issues). Assim que possível, estarei respondendo as todas as dúvidas que tiverem!
