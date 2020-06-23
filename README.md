@@ -1,6 +1,6 @@
 ## Bem vindo ao repositório do Curso de desenvolvedores C#
 
-![GitHub Logo](/images/logo.png)
+![GitHub Logo](https://postimg.cc/pySWBdfj)
 Format: ![Alt Text](https://postimg.cc/pySWBdfj)
 
 
