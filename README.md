@@ -1,8 +1,6 @@
 ## Bem vindo ao repositório do Curso de desenvolvedores C#
 
 ![GitHub Logo](https://i.postimg.cc/gkzxmXrg/logo-gith-curso.png)
-Format: ![Alt Text](https://i.postimg.cc/gkzxmXrg/logo-gith-curso.png)
-
 
 A idéia do curso é ajudar a todos que desejam aprender a linguagem c#. 
 
