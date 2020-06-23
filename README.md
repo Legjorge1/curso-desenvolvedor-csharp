@@ -1,6 +1,8 @@
 ## Bem vindo ao repositório do Curso de desenvolvedores C#
 
-A idéia do curso é ajudar a todos que desejam aprender a linguagem c#, as aulas serão realizadas em live no canal xDIDAdev da [twitch](twitch.tv/xdidadev) às quartas-19h e aos sábados-14h, para acompanhar os vídeos gravados fique atento a tabela de vídeos. 
+A idéia do curso é ajudar a todos que desejam aprender a linguagem c#. 
+
+As aulas serão realizadas em live no canal xDIDAdev da [twitch](twitch.tv/xdidadev) às quartas-19h e aos sábados-14h - (06/2020 - 07/2020), para acompanhar os vídeos gravados fique atento a tabela de vídeos. 
 
 Esse repositório será utilizado para compartilharmos os códigos que iremos produzir no curso.
 
@@ -18,6 +20,13 @@ Para esse curso utilizaremos.
 * Seu computador com sistema operaional Windows
 * Ferramentas para codificar ( Bloco de notas, [Visual Code](https://code.visualstudio.com/), [Visual Studio](https://visualstudio.microsoft.com/pt-br/vs/community/) ) - escolha uma ;)
 * Versão do SDK Framework corrente
+
+### Vídeos
+
+Vídeos | O que foi abordado
+------------ | -------------
+Não disponibilizado | informaremos o que será abordado
+Não disponibilizado | informaremos o que será abordado
 
 ### O que vou aprender?
 
