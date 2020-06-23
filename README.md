@@ -17,7 +17,7 @@ Quero ser um contribuidor para o curso c#, como faço? [clica aqui e pede inform
 Para esse curso utilizaremos.
 
 * Vontade de aprender
-* Seu computador com sistema operaional Windows
+* Seu computador com sistema operacional Windows
 * Ferramentas para codificar ( Bloco de notas, [Visual Code](https://code.visualstudio.com/), [Visual Studio](https://visualstudio.microsoft.com/pt-br/vs/community/) ) - escolha uma ;)
 * Versão do SDK Framework corrente
 
@@ -34,4 +34,4 @@ Vai aprender a desenvolver com a linguagem c#, o foco principal do curso é most
 
 ## Tenho Dúvidas... O que Faço?!
 
-Caso tenham dúvidas aos códigos desenvolvidos durante a série de artigos, sintam-se a vontade em abrir uma [ISSUE AQUI](https://github.com/diogocsbr/curso-desenvolvedor-csharp/issues). Assim que possível, estarei respondendo as todas as dúvidas que tiverem!
+Caso tenham dúvidas aos códigos desenvolvidos durante a série de lives, sintam-se a vontade em abrir uma [ISSUE AQUI](https://github.com/diogocsbr/curso-desenvolvedor-csharp/issues). Assim que possível, estarei respondendo as todas as dúvidas que tiverem!
