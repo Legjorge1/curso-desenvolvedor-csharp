@@ -1,5 +1,9 @@
 ## Bem vindo ao repositório do Curso de desenvolvedores C#
 
+![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](https://postimg.cc/pySWBdfj)
+
+
 A idéia do curso é ajudar a todos que desejam aprender a linguagem c#. 
 
 As aulas serão realizadas em live no canal xDIDAdev da [twitch](https://twitch.tv/xdidadev) às quartas-19h e aos sábados-14h - (06/2020 - 07/2020), para acompanhar os vídeos gravados fique atento a tabela de vídeos. 
