@@ -32,6 +32,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ex007", "ex007", "{8A190F97
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "intrucaoSwitch", "intrucaoSwitch\intrucaoSwitch.csproj", "{D07B4B8C-E850-4E24-93FB-DE3868D4AAAB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ex008", "ex008", "{59E6F805-2E0B-468A-B6E2-9C001A986FBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "instrucaoLoops", "instrucaoLoops\instrucaoLoops.csproj", "{C1BAC472-A9A3-4271-A8EE-A22A3472DECD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,6 +66,10 @@ Global
 		{D07B4B8C-E850-4E24-93FB-DE3868D4AAAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D07B4B8C-E850-4E24-93FB-DE3868D4AAAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D07B4B8C-E850-4E24-93FB-DE3868D4AAAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1BAC472-A9A3-4271-A8EE-A22A3472DECD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1BAC472-A9A3-4271-A8EE-A22A3472DECD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1BAC472-A9A3-4271-A8EE-A22A3472DECD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1BAC472-A9A3-4271-A8EE-A22A3472DECD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,6 +81,7 @@ Global
 		{F170556D-4EEE-4623-A960-1E0363CD5AD9} = {8A705B6D-03C7-4161-969C-CF54D829A270}
 		{6AACC50B-1599-4997-A351-2EAF61A99CD6} = {CB4AF827-61A7-43F8-B297-376810751DF9}
 		{D07B4B8C-E850-4E24-93FB-DE3868D4AAAB} = {8A190F97-6C55-4C67-9B31-9BBD177A025C}
+		{C1BAC472-A9A3-4271-A8EE-A22A3472DECD} = {59E6F805-2E0B-468A-B6E2-9C001A986FBA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {391644C7-7BA7-4B37-957C-2CC9E53DAEDF}
