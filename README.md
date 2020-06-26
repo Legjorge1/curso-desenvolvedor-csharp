@@ -2,7 +2,7 @@
 
 ![GitHub Logo](https://i.postimg.cc/gkzxmXrg/logo-gith-curso.png)
 
-A idéia do curso é ajudar a todos que desejam aprender a linguagem c#. 
+A idéia deste curso é, explicar de forma simples e clara, como podem utilizar a linguagem c#. 
 
 As aulas serão realizadas em live no canal xDIDAdev da [twitch](https://twitch.tv/xdidadev) às quartas-19h e aos sábados-14h - (06/2020 - 07/2020), para acompanhar os vídeos gravados fique atento a tabela de vídeos. 
 
