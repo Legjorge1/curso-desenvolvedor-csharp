@@ -1,6 +1,6 @@
 using System;
 
-class TestClass
+class MeuPrimeiroPrograma
 {
     static void Main(string[] args)
     {

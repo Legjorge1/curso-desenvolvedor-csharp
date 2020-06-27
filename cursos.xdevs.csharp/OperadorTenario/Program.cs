@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.InteropServices.WindowsRuntime;
 
 namespace OperadorTenario
 {
@@ -15,6 +12,17 @@ namespace OperadorTenario
             //OperadoresBoleanos();
         }
 
+        static bool Condicao1()
+        {
+            Console.WriteLine("Condiçao 1 - Retorna TRUE"); 
+            return true;
+        }
+        static bool Condicao2()
+        {
+            Console.WriteLine("Condiçao 2 - Retorna FALSE"); 
+            return false;
+        }
+        
         static void OperadorTenario() { 
 
             // exemplo de utilização de um operador tenário
@@ -44,6 +52,11 @@ namespace OperadorTenario
             bool resultado;
             bool a = true;
             bool b = false;
+            bool c = false;
+
+            bool vf1 = a ^ b;
+            bool vf2 = c ^ b;
+
             resultado = a & b; 
             resultado = a | b; 
             resultado = a ^ b; 
@@ -52,6 +65,20 @@ namespace OperadorTenario
             resultado = a || b;
             resultado = a == b;
 
+            //Console.WriteLine("teste 1 - &");
+            //bool novoResultado = Condicao1() & Condicao2() ;
+            //Console.WriteLine("teste 2 - &&");
+            //novoResultado = Condicao1() && Condicao2();
+            //Console.WriteLine("teste 3 - &");
+            //novoResultado = Condicao2() & Condicao1();
+            //Console.WriteLine("teste 4 - &&");
+            //novoResultado = Condicao2() && Condicao1();
+
+            //bool rPipe = true;
+            //rPipe = Condicao1() | Condicao2();
+            //rPipe = Condicao1() || Condicao2();
+
+            //Console.ReadKey();
 
             //operador bit a bit
             uint aa = 0b_0000_1111_0000_1111_0000_1111_0000_1100;

@@ -15,29 +15,35 @@ namespace Variaveis_funcoes
             float distancia;
             string primeiroNome;
 
+            DateTime datanascimento;
+
             // atribuindo valor a variável
             contador = 0;
             distancia = 4.5f;
             primeiroNome = "Dida";
 
             //Chamando o método
-            FuncaoRetonaValor();
+            Funcao();
+            int retorno = FuncaoRetonaValor();
+
+            Console.WriteLine(retorno);
+            Console.ReadKey();
         }
-
-
 
         /// <summary>
         /// Função que não retorna valor
         /// </summary>
         static void Funcao()
         {
-
+            //logica de codigo 
         }
 
         //Cometário para o programador
         static int FuncaoRetonaValor()
         {
-            return 0;
+            //logicas 
+
+            return 10;
         }
 
 

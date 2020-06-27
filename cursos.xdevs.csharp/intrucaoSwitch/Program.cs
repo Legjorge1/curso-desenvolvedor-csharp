@@ -10,7 +10,7 @@ namespace intrucaoSwitch
     {
         static void Main(string[] args)
         {
-            string condicao = "Olá";
+            string condicao = "Boa tarde";
             switch (condicao)
             {
                 case "Bom dia":
@@ -42,6 +42,27 @@ namespace intrucaoSwitch
                     Console.WriteLine("caso -1 -10.");
                     break;
                     //podemos omitir o default:
+            }
+
+            DateTime dt = DateTime.Now;
+
+            switch (dt.DayOfWeek)
+            {
+                case DayOfWeek.Saturday:
+                    {
+                        Console.WriteLine("14 Hrs é seu curso");
+                        break;
+                    }
+                case DayOfWeek.Wednesday:
+                    {
+                        Console.WriteLine("19 Hrs é seu curso");
+                        break;
+                    }
+                default:
+                    {
+                        Console.WriteLine("é dia de conversar");
+                        break;
+                    }
             }
         }
     }

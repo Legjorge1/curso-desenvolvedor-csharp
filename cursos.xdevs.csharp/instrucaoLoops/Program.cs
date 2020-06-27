@@ -13,11 +13,23 @@ namespace instrucaoLoops
             //loopComfor();
             //numerosLoteria();
             //loopComForeach();
-            //loopWhile();
+            loopWhile();
+            loopDoWhile();
         }
 
         static void loopComfor() 
         {
+            //int x ;
+            //for(x = 1; x <= 1000; x++)
+            //{
+            //    Console.WriteLine($"Enviando NF {x} para Prefeitura");
+            //    if (x == 10)
+            //    {
+            //        //logica
+            //        break;
+            //    }
+            //}
+
             // contar até 10 e incrementar de 2 em 2
             for (int contador = 0; contador <= 10; contador += 2)
             {
@@ -33,7 +45,6 @@ namespace instrucaoLoops
             //Vamos falar de incrementar
             //++, --, +=, *=,
         }
-
         static void numerosLoteria() 
         {
             // variável que vai conter todos os números possíveis
@@ -60,10 +71,10 @@ namespace instrucaoLoops
             }
             Console.ReadLine();
         }
-    
         static void loopComForeach() 
         {
             int[] arrayDeInts = new int[] { 78, 89, 90, 76, 98, 65 };
+            
             foreach (int numeros in arrayDeInts)
             {
                 Console.WriteLine(numeros);
@@ -81,7 +92,7 @@ namespace instrucaoLoops
         static void loopWhile() 
         {
             int valor = 0;
-            while (valor < 10) //Enquanto a variável for menor que 10, execute esse bloco de código
+            while (valor <= 10) //Enquanto a variável for menor que 10, execute esse bloco de código
             {
                 Console.WriteLine(valor);
                 valor++; //se não incremetarmos a váriavel esse loop será eterno
