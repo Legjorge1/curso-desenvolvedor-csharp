@@ -13,8 +13,8 @@ namespace instrucaoLoops
             //loopComfor();
             //numerosLoteria();
             //loopComForeach();
-            loopWhile();
-            loopDoWhile();
+            //loopWhile();
+            //loopDoWhile();
         }
 
         static void loopComfor() 
