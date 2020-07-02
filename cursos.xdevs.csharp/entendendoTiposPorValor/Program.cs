@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace entendendoTiposPorValor
 {
@@ -11,7 +7,6 @@ namespace entendendoTiposPorValor
         static void Main(string[] args)
         {
             //==> Struct, vem da biblioteca System
-
             bool variavelBool = true;
             System.Boolean variavelBool2 = true;
 
@@ -40,6 +35,11 @@ namespace entendendoTiposPorValor
             Console.WriteLine(meuInt);
             Console.WriteLine(meuSegundoInt);
             Console.WriteLine();
+
+            meuInt = 5;
+            Console.WriteLine("Valor meuInt ==>" + meuInt);
+            Console.WriteLine("Valor meuSegundoInt ==>" + meuSegundoInt);
+
             #endregion
 
             /*
@@ -50,7 +50,7 @@ namespace entendendoTiposPorValor
                 copiam uma referência (endereço de memória) diferentes dos tipos de valores, discutiremos mais adiante.
              * */
 
-            //capacidadeEBits();
+            capacidadeEBits();
         }
 
         static void capacidadeEBits()

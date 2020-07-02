@@ -10,11 +10,16 @@ namespace parametrosNomeados
     {
         static void Main(string[] args)
         {
+            acharArea(35.5, 25.3);
+
             double area = acharArea(comprimento: 35.0, largura: 25.5);
             double area1 = acharArea(largura: 25.5, comprimento: 35.0);
             Console.WriteLine(area);
 
-            //chamar o opcional ao vivo
+            mostrarNome("Diogo");
+            mostrarNome("Diogo", "X");
+            mostrarNome("Diogo", "X","Ultimo nome");
+
         }
 
         //parametro nomeado
@@ -24,7 +29,7 @@ namespace parametrosNomeados
         }
 
         //parametro opcional
-        public void mostrarNome(string primeiro, string inicial = "", string final = "")
+        public static void mostrarNome(string primeiro, string inicial = "D", string final = "")
         {
             Console.WriteLine(primeiro + " " + inicial + " " + final);
         }

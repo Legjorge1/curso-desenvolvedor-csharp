@@ -10,8 +10,15 @@ namespace explicandoStructs
     {
         static void Main(string[] args)
         {
-            //struct é um tipo (value type), mas um tipo complexo
 
+            int variavelCriada = 10;
+
+            Carro carroStr = new Carro();
+            carroStr.Nome = "Fox";
+            carroStr.Marca = "VW";
+            carroStr.Portas = 5;
+
+            //struct é um tipo (value type), mas um tipo complexo
             Estudante estudante = new Estudante();
             estudante.primeiroNome = "Diogo";
 
@@ -29,6 +36,13 @@ namespace explicandoStructs
             meuLivro.proximaPagina();
             meuLivro.voltarPagina();
         }
+    }
+
+    struct Carro 
+    { 
+        public string Nome { get; set; }
+        public string Marca { get; set; }
+        public int Portas { get; set; }
     }
 
     struct Estudante

@@ -13,6 +13,9 @@ namespace propriedades
         {
             Estudante estu = new Estudante();
             estu.PrimeiroNome = "Diogo";
+            
+            var campo = estu.UltimoNome;
+            //erro
             //estu.UltimoNome = "Santos";
         }
     }

@@ -30,8 +30,8 @@ namespace utilizandoClasses
 
             //*1
             //metodo 
-            primeiroEstudante.mostrarNome();
-
+            string nomeComplet = primeiroEstudante.mostrarNome();
+            Console.WriteLine(nomeComplet);
             //*2 construtor
 
             //*3
@@ -109,15 +109,15 @@ namespace utilizandoClasses
         }
 
         //métodos
-        public string concatenarNome()
+        private string concatenarNome()
         {
             string nomeCompleto = this.primeiroNome + " " + this.ultimoNome;
             return nomeCompleto;
         }
-        public void mostrarNome()
+        public string mostrarNome()
         {
             string nome = concatenarNome();
-            Console.WriteLine(nome);
+            return nome;
         }
         public void mostrarNome(string texto)
         {
