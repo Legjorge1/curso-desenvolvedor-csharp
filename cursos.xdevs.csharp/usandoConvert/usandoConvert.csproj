@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8B231E79-A8C5-437A-AF66-F19C1D026CC4}</ProjectGuid>
+    <ProjectGuid>{F090408A-BFB7-4CE1-A20A-16A6712F3100}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>modificadores</RootNamespace>
-    <AssemblyName>modificadores</AssemblyName>
+    <RootNamespace>usandoConvert</RootNamespace>
+    <AssemblyName>usandoConvert</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -48,12 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\classes\classes.csproj">
-      <Project>{6a57753b-875b-4314-8b99-9d5f4afb2449}</Project>
-      <Name>classes</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

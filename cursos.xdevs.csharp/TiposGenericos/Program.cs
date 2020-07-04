@@ -7,6 +7,22 @@ using System.Threading.Tasks;
 
 namespace TiposGenericos
 {
+    //Exemplo this
+    class um
+    {
+        int valortotal = 100;
+        string CAMPO;
+
+        void metodo1() {
+            int valortotal = 0;
+            var a = this.valortotal;
+        }
+
+        void metodo2() { 
+            var a = valortotal;
+        }
+    }
+
     class Program
     {
         static void Main(string[] args)
