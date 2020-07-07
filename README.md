@@ -27,9 +27,9 @@ Para esse curso utilizaremos.
 
 Vídeos | O que foi abordado
 ------------ | -------------
-Aula 01 | [![veja o video](https://www.youtube.com/watch?v=ln1yVkAwK4w)]
-Aula 02 | [![veja o video](https://www.youtube.com/watch?v=TqWieWO_IfM)]
-Aula 03 | [![veja o video](https://www.youtube.com/watch?v=K8koLXWDsbw)]
+Aula 01 | [![veja o video](https://postimg.cc/svCMZ69n)](https://www.youtube.com/watch?v=ln1yVkAwK4w)
+Aula 02 | [![veja o video](https://postimg.cc/svCMZ69n)](https://www.youtube.com/watch?v=TqWieWO_IfM)
+Aula 03 | [![veja o video](https://postimg.cc/svCMZ69n)](https://www.youtube.com/watch?v=K8koLXWDsbw)
 
 ### O que vou aprender?
 
