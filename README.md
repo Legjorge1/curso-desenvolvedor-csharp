@@ -27,8 +27,9 @@ Para esse curso utilizaremos.
 
 Vídeos | O que foi abordado
 ------------ | -------------
-Não disponibilizado | informaremos o que será abordado
-Não disponibilizado | informaremos o que será abordado
+Aula 01 | [![veja o video](https://i.imgur.com/vKb2F1B.png)](https://www.youtube.com/watch?v=ln1yVkAwK4w&t=4s)
+Aula 02 | [![veja o video](https://i.imgur.com/vKb2F1B.png)](https://www.youtube.com/watch?v=TqWieWO_IfM) 
+Aula 03 | [![veja o video](https://i.imgur.com/vKb2F1B.png)](https://www.youtube.com/watch?v=K8koLXWDsbw) 
 
 ### O que vou aprender?
 
