@@ -38,9 +38,17 @@ namespace manipulandocomstringbuilder2
                 resultado.AppendLine(linhas.ToString());
             }
             // mostra o resultado
+            
             //stringBuilderTextBox.Text = resultado.ToString();
-            //stringBuilderTextBox.Text = linhas.ToString();
+            stringBuilderTextBox.Text = linhas.ToString();
             stringBuilderTextBox.Select(0, 0);
+
+            StringBuilder sb = new StringBuilder();
+            txtFormat.Text = sb.AppendFormat("Di{0}o", "og").ToString();
+
+
+
+
 
         }
     }

@@ -32,5 +32,9 @@ namespace ObjectTostring
         public string t { get; set; }
 
         //Override do Tostring em aula
+        public override string ToString()
+        {
+            return string.Format("Paramentro inicial i = {0} e t = {1}", this.i, this.t);
+        }
     }
 }

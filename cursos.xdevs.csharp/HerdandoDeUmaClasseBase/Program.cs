@@ -13,9 +13,13 @@ namespace HerdandoDeUmaClasseBase
     {
         static void Main(string[] args)
         {
+            //Pessoa p = new Pessoa("Diogo", "Costa");
 
-            Empregado empregado = new Empregado("Diogo", "Santos", "TI");
-            
+            Empregado empregado = new Empregado(
+                primeiroNome: "Diogo", 
+                ultimoNome: "Santos", 
+                departamentoNome: "TI");
+
         }
     }
 
@@ -45,16 +49,16 @@ namespace HerdandoDeUmaClasseBase
     {
         public string DepartamentoNome { get; set; }
 
-        public Empregado(string primeiroNome, string ultimoNome, string departamentoNome) : base (primeiroNome, ultimoNome)
+        public Empregado(string primeiroNome, string ultimoNome, string departamentoNome) 
+            : base (primeiroNome, ultimoNome)
         {
-            // Validar o noome do departamento
+            // Validar o nome do departamento
             if ((departamentoNome == null) || (departamentoNome.Length < 1))
                 throw new ArgumentOutOfRangeException("departamentoNome", departamentoNome, 
                     "DepartamentoNome dever ser diferente de nulo ou branco.");
             // Guardar o departamento.
             DepartamentoNome = departamentoNome;
         }
-       
     }
 
 }

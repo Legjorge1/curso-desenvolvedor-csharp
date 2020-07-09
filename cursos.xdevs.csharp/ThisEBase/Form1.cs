@@ -24,7 +24,7 @@ namespace ThisEBase
             Pessoa bea = new Pessoa("Bia");
             Results += Environment.NewLine;
             Results += "Criando a Pessoa(Ed, Nasc)" + Environment.NewLine;
-            Pessoa al = new Pessoa("Em", "Nasc");
+            Pessoa al = new Pessoa("Ed", "Nasc");
             Results += Environment.NewLine;
             // Criando alguns empregados
             Results += "Criando Empregado(Carlos)" + Environment.NewLine;

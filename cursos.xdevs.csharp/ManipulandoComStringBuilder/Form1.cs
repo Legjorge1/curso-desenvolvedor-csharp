@@ -17,11 +17,14 @@ namespace ManipulandoComStringBuilder
             InitializeComponent();
 
             string[] nomes = { "Diogo", "Costa", "Santos", "xDidadev", };
+            
             StringBuilder todosNomes = new StringBuilder();
+            
             foreach (string name in nomes)
             {
                 todosNomes.Append("[" + name + "]" + Environment.NewLine);
             }
+            
             textBox1.Text = todosNomes.ToString();
 
         }

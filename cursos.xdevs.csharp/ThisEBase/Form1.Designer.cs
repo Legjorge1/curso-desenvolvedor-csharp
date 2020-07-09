@@ -31,12 +31,12 @@
             this.resultsTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // Results
+            // resultsTextBox
             // 
             this.resultsTextBox.Location = new System.Drawing.Point(12, 12);
             this.resultsTextBox.Multiline = true;
-            this.resultsTextBox.Name = "Results";
-            this.resultsTextBox.Size = new System.Drawing.Size(380, 426);
+            this.resultsTextBox.Name = "resultsTextBox";
+            this.resultsTextBox.Size = new System.Drawing.Size(776, 426);
             this.resultsTextBox.TabIndex = 0;
             // 
             // Form1

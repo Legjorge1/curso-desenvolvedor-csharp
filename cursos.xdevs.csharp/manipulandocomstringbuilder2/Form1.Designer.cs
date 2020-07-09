@@ -29,21 +29,30 @@
         private void InitializeComponent()
         {
             this.stringBuilderTextBox = new System.Windows.Forms.TextBox();
+            this.txtFormat = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // stringBuilderTextBox
             // 
-            this.stringBuilderTextBox.Location = new System.Drawing.Point(12, 51);
+            this.stringBuilderTextBox.Location = new System.Drawing.Point(12, 12);
             this.stringBuilderTextBox.Multiline = true;
             this.stringBuilderTextBox.Name = "stringBuilderTextBox";
             this.stringBuilderTextBox.Size = new System.Drawing.Size(776, 312);
             this.stringBuilderTextBox.TabIndex = 0;
+            // 
+            // txtFormat
+            // 
+            this.txtFormat.Location = new System.Drawing.Point(237, 345);
+            this.txtFormat.Name = "txtFormat";
+            this.txtFormat.Size = new System.Drawing.Size(137, 20);
+            this.txtFormat.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtFormat);
             this.Controls.Add(this.stringBuilderTextBox);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -56,6 +65,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox stringBuilderTextBox;
+        private System.Windows.Forms.TextBox txtFormat;
     }
 }
 

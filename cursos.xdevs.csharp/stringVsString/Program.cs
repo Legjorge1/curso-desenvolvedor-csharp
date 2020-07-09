@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,12 +12,14 @@ namespace stringVsString
             string str1 = "Olá mundo";
             String str2 = "Olá mundo";
 
+            Console.WriteLine(str1);
             //string é um alias do String
             //UTF-16 =. um formato de encoding que grava 16bits cada caracter
             //tipo imutável
-
+            
             //outra string em memória
             string str3 = str1.ToUpper();
+            Console.WriteLine(str3);
 
             //ficar manipulando string pode impactar muitos processos na memória,
             //se precisar realizar muitas concatenações usaremos o Stringbuilder
@@ -34,15 +35,16 @@ namespace stringVsString
 
             //Campos //propriedades //metodos
             #region "Verificando se uma string está vazia"
-            if (str1 != string.Empty)
+            string numero = "                 ";
+            if (numero != string.Empty)
             {
-                Console.WriteLine("str1 não está vazio");
+                Console.WriteLine("numero não está vazio");
             }
 
             //
-            if (!string.IsNullOrWhiteSpace(str2))
+            if (!string.IsNullOrWhiteSpace(numero))
             {
-                Console.WriteLine("str2 também não está vazio");
+                Console.WriteLine("numero também não está vazio");
             }
 
             if (str3 != "")
@@ -51,8 +53,12 @@ namespace stringVsString
             }
             #endregion
 
+            Console.WriteLine(str3.Replace('O', 'X'));
+            Console.WriteLine(str3.PadLeft(20, '0'));
+
+
             //Tamanho de uma string 9 quantidade de caracteres
-            Console.WriteLine("Quantidade de caracteres na str3" + str3.Length);
+            Console.WriteLine("Quantidade de caracteres na str3 - " + str3.Length);
 
             //transformar uma string em um Array de char
             string str5 = "programando em c#";
