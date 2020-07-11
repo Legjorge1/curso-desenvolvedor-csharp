@@ -18,6 +18,8 @@ namespace ImplementandoIComparable
 
     }
 
+    //==> Comparar por um campo
+
     public class Carro : IComparable
     {
         public string Nome { get; set; }
@@ -49,4 +51,5 @@ namespace ImplementandoIComparable
         }
 
     }
+
 }

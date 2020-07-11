@@ -21,33 +21,39 @@ namespace ConsumindoAClasseCarro
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // Make some data.
+            // Lista de carros (objeto)
             Carro[] carros = {  new Carro() { Nome="SSC Ultimate Aero", MaximaPotencia=257,  Cavalos=1183, Preco=654400m},
-                                new Carro() { Nome="Bugatti Veyron", MaximaPotencia=253, Cavalos=1001, Preco=1700000m}, };
+                                new Carro() { Nome="Bugatti Veyron", MaximaPotencia=253, Cavalos=1001, Preco=1700000m}, 
+                                new Carro() { Nome="Palio Elx", MaximaPotencia=10, Cavalos=10, Preco=30000m},
+                                new Carro() { Nome="Gol GTI", MaximaPotencia=12, Cavalos=9, Preco=32000m},
+            };
 
-            // Display the cars unsorted.
-            DisplayCars(carros, listView1);
-            // Sort the array of cars.
+            // Mostra a lista sem ordernar
+            MostrarCarros(carros, listBox1);
+            // Ordernar o array no carro
             Array.Sort(carros);
-            // Display the cars sorted.
-            DisplayCars(carros, listView2);
+            // Mostra os carros ordenados
+            MostrarCarros(carros, listBox2);
+            // Ordernar de formar reversa a lista de carro
+            Array.Reverse(carros);
+            // Mostrar os carros ordenados de forma Reversa
+            MostrarCarros(carros, listBox3);
+
         }
 
-        // Display the cars in the ListView control.
-        private void DisplayCars(Carro[] cars, ListView listView)
+        private void MostrarCarros(Carro[] cars, ListBox listbox)
         {
-            listView.Items.Clear();
+            listbox.Items.Clear();
             foreach (Carro car in cars)
             {
-                ListViewItem item = listView.Items.Add(car.Nome);
-                item.SubItems.Add(car.MaximaPotencia.ToString());
-                item.SubItems.Add(car.Cavalos.ToString());
-                item.SubItems.Add(car.Preco.ToString("C"));
-            }
-            foreach (ColumnHeader header in listView.Columns)
-            {
-                header.Width = -2;
+                listbox.Items.Add(
+                    string.Format("Nome: {0}, Potencia: {1}, Cavalos: {2}, Preço: {3}", car.Nome, car.MaximaPotencia, car.Cavalos, car.Preco.ToString("C"))
+                    );
+
             }
         }
+
+
+
     }
 }
