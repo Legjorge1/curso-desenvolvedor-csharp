@@ -8,7 +8,8 @@ namespace ExemploYeld
 {
     class Program
     {
-        static List<string> paises = new List<string> { "Brasil", "Argentina", "Colombia", "EUA", "México", "Japão" };
+        static List<string> paises = new List<string> 
+        { "Brasil", "Argentina", "Colombia", "EUA", "México", "Japão" };
         static void Main(string[] args)
         {
             //sem yield
@@ -19,7 +20,7 @@ namespace ExemploYeld
             }
 
             //com yield
-            IEnumerable<string> resultado2 = RetornarPaisesComMenosDe5_v1();
+            IEnumerable<string> resultado2 = RetornarPaisesComMenosDe5_v2();
             foreach (var nome in resultado2)
             {
                 Console.WriteLine(nome);

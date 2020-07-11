@@ -10,6 +10,7 @@ namespace CriandoInterface
     {
         static void Main(string[] args)
         {
+            //implementação de interface implicita
             Estudante estudante = new Estudante();
             
             //acessamos os cursos;
@@ -39,8 +40,11 @@ namespace CriandoInterface
         // Printar a grade do curso do estudante.
         void MostrarGrade();
 
+
         //mostrar implementação em aula
         //decimal RetornarSalario();
+
+
     }
 
 
@@ -69,11 +73,12 @@ namespace CriandoInterface
         {
 
         }
-        List<string> IEstudante.Cursos { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        List<string> IEstudante.Cursos { get; set; }
 
         void IEstudante.MostrarGrade()
         {
-            throw new NotImplementedException();
+            // Faremos o que é necessário...
         }
     }
 

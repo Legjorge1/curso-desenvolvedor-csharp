@@ -35,6 +35,8 @@ namespace ImplementandoIComparable
             Carro other = obj as Carro;
             return Nome.CompareTo(other.Nome);
         }
+
+
     }
 
     public class Carro2 : IComparable<Carro2>

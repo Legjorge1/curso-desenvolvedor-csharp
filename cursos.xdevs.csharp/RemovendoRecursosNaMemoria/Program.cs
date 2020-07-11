@@ -48,11 +48,9 @@ namespace RemovendoRecursosNaMemoria
 
 
         //Destrutor
-        ~RemovendoRecursosDaMemoria()
-        {
-            //Removemos os recursos da memória
+        ~RemovendoRecursosDaMemoria() 
+        { 
         }
-
         //Você não vê mas aqui, estamos fazendo um override de um método Finalize
     }
 

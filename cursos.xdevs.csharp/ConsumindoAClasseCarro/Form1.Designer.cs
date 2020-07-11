@@ -36,26 +36,32 @@
             // 
             // listBox1
             // 
+            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 24;
             this.listBox1.Location = new System.Drawing.Point(11, 50);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(374, 238);
+            this.listBox1.Size = new System.Drawing.Size(374, 220);
             this.listBox1.TabIndex = 3;
             // 
             // listBox2
             // 
+            this.listBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox2.FormattingEnabled = true;
+            this.listBox2.ItemHeight = 24;
             this.listBox2.Location = new System.Drawing.Point(392, 50);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(366, 238);
+            this.listBox2.Size = new System.Drawing.Size(366, 220);
             this.listBox2.TabIndex = 4;
             // 
             // listBox3
             // 
+            this.listBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox3.FormattingEnabled = true;
+            this.listBox3.ItemHeight = 24;
             this.listBox3.Location = new System.Drawing.Point(765, 50);
             this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(374, 238);
+            this.listBox3.Size = new System.Drawing.Size(374, 220);
             this.listBox3.TabIndex = 5;
             // 
             // label1

@@ -18,7 +18,9 @@ namespace ExemploIEnumerator
             InitializeComponent();
 
 
-            Pessoa[] pessoasArray = new[] { new Pessoa("Diogo", "contato@diogocosta.dev"), new Pessoa("Costa", "diogo@codigocentral.com.br"), 
+            Pessoa[] pessoasArray = new[] { 
+                new Pessoa("Diogo", "contato@diogocosta.dev"), 
+                new Pessoa("Costa", "diogo@codigocentral.com.br"), 
                 new Pessoa("Santos", "diogo@icloud.com") };
 
             Pessoas pessoasNaLista = new Pessoas(pessoasArray);

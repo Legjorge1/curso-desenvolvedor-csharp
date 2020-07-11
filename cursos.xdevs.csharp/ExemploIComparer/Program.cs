@@ -10,33 +10,33 @@ namespace ExemploIComparer
     {
         static void Main(string[] args)
         {
-            List<string> dinossauros = new List<string>();
-            dinossauros.Add("São Paulo");
-            dinossauros.Add("Santos");
-            dinossauros.Add("Corinthians");
-            dinossauros.Add("Palmeiras");
-            Mostrar(dinossauros);
+            List<string> times = new List<string>();
+            times.Add("São Paulo");
+            times.Add("Santos");
+            times.Add("Corinthians");
+            times.Add("Palmeiras");
+            Mostrar(times);
 
-            DinoComparer dc = new DinoComparer();
+            timesComparer dc = new timesComparer();
 
             Console.WriteLine("\nSort com comparer:");
-            dinossauros.Sort(dc);
-            Mostrar(dinossauros);
+            times.Sort(dc);
+            Mostrar(times);
 
-            ProcurarEAdicionar(dinossauros, "Flamengo", dc);
-            Mostrar(dinossauros);
+            ProcurarEAdicionar(times, "Flamengo", dc);
+            Mostrar(times);
 
-            ProcurarEAdicionar(dinossauros, "Fluminense", dc);
-            Mostrar(dinossauros);
+            ProcurarEAdicionar(times, "Fluminense", dc);
+            Mostrar(times);
 
-            ProcurarEAdicionar(dinossauros, "Vasco", dc);
-            Mostrar(dinossauros);
+            ProcurarEAdicionar(times, "Vasco", dc);
+            Mostrar(times);
 
-            ProcurarEAdicionar(dinossauros, null, dc);
-            Mostrar(dinossauros);
+            ProcurarEAdicionar(times, null, dc);
+            Mostrar(times);
         }
 
-        private static void ProcurarEAdicionar(List<string> list, string insert, DinoComparer dc)
+        private static void ProcurarEAdicionar(List<string> list, string insert, timesComparer dc)
         {
             Console.WriteLine("\nBinarySearch e Inserção \"{0}\":", insert);
 
@@ -61,7 +61,7 @@ namespace ExemploIComparer
 
     //==> Comparar por vários meios
 
-    public class DinoComparer : IComparer<string>
+    public class timesComparer : IComparer<string>
     {
         public int Compare(string x, string y)
         {
