@@ -23,7 +23,7 @@ namespace lambdaExpressions
             {
                 int trial = ++Trials;
                 statusLabel.Text = "Executando o teste " + trial.ToString() + "...";
-                await DoSomethingAsync();
+                await fazerAlgoAsync();
                 statusLabel.Text = "Teste realizado " + trial.ToString();
             };
 
@@ -64,7 +64,7 @@ namespace lambdaExpressions
 
         }
 
-        async Task DoSomethingAsync()
+        async Task fazerAlgoAsync()
         {
             // só para gastar o tempo 
             await Task.Delay(3000);
