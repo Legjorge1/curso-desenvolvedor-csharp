@@ -53,7 +53,3 @@ namespace apresentandoDelegates
         }
     }
 }
-
-
-//a delegate is a type that defines the parameters and return value of a method.
-//callback
