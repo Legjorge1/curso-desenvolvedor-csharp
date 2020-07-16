@@ -21,13 +21,18 @@ namespace MetodoAnonimo
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //criando uma ellipse no formulário
             this.Paint += delegate (object obj, PaintEventArgs args)
             {
                 args.Graphics.DrawEllipse(Pens.Red, 10, 10, 200, 100);
             };
 
-            System.Threading.Thread thread = new System.Threading.Thread(
+            //
+            System.Threading.Thread thread = 
+                new System.Threading.Thread(
+
                 delegate () { MessageBox.Show("Olá pessoal"); });
+
             thread.Start();
         }
 

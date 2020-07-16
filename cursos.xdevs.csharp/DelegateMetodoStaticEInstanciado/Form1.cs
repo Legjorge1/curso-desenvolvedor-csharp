@@ -22,12 +22,12 @@ namespace DelegateMetodoStaticEInstanciado
             // Criar algumas pessoas.
             Pessoa alice = new Pessoa() { Nome = "Alice" };
             Pessoa bob = new Pessoa() { Nome = "Bob" };
-            
+
             //registrando os delegates
             alice.metodoInstanciado = alice.retornaNome;
             alice.metodoStatic = Pessoa.StaticNome;
             
-            bob.metodoInstanciado = alice.retornaNome;
+            bob.metodoInstanciado = bob.retornaNome;
             bob.metodoStatic = Pessoa.StaticNome;
             
             //resultados

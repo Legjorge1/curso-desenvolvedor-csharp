@@ -31,36 +31,38 @@ namespace lambdaExpressions
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Action mensagem;
-            mensagem = () => MessageBox.Show("Oi");
-            mensagem();
-
-            //Action mensagem = () => MessageBox.Show("Oi");
+            //Action mensagem;
+            //mensagem = () => MessageBox.Show("Oi");
             //mensagem();
+
+            Action mensagem = () => MessageBox.Show("Oi");
+            mensagem();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Action<string> m = (mensagem) => MessageBox.Show(mensagem);
-            
             m("mensagem que vai ser chamada");
+
+            MessageBox.Show("texto", "caption", 
+                MessageBoxButtons.YesNoCancel,
+                MessageBoxIcon.Exclamation);
 
             //tudo na mesma linha
             Action<string, string, MessageBoxButtons, MessageBoxIcon> n = 
                 (message, caption, buttons, icon) => 
                 MessageBox.Show(message, caption, buttons, icon);
 
-
             n("Mensgem de dados inválidos", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             Func<float, float> quadrado = (float x) => x * x;
+
             float y = quadrado(13);
 
-            MessageBox.Show(quadrado.ToString());
+            MessageBox.Show(y.ToString());
 
         }
 
@@ -70,6 +72,6 @@ namespace lambdaExpressions
             await Task.Delay(3000);
         }
 
-  
+
     }
 }
