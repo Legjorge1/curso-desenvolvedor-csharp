@@ -35,20 +35,32 @@ namespace Evento
             #region "Teste 3"
             //instrução Microsoft
             ContaBancaria3 e = new ContaBancaria3();
+            e.SaldoInsuficiente += E_SaldoInsuficiente;
+
             e.Saldo = 100;
             e.Debito(101);
+
             #endregion
 
             #region "Teste 4"
             ContaMonetaria cm = new ContaMonetaria();
+            //registrando o subscribe
+            cm.SaldoInsuficiente += Cm_SaldoInsuficiente;
+
             cm.Saldo = 100;
             cm.TaxaDebito(101);
 
-            //Local errado (Subscribe)
-            cm.SaldoInsuficiente += Cm_SaldoInsuficiente;
             #endregion
 
             Console.ReadKey();
+        }
+
+        private static void E_SaldoInsuficiente(object sender, SaldoInsuficienteEventArgs e)
+        {
+            //avisar o cliente
+            //registra
+            //logica é sua
+            var classe = e;
         }
 
         private static void Cm_SaldoInsuficiente(object sender, SaldoInsuficienteEventArgs e)

@@ -35,9 +35,11 @@ namespace ExemplosSobreErros
 
                 var resultado = x / y;
 
-            } catch (Exception ex)
+            } catch (Exception tttt)
             {
-                MessageBox.Show(ex.Message);
+                //logica total 
+                MessageBox.Show(tttt.Message);
+                txtNum1.Focus();
             }
         }
 
@@ -67,13 +69,14 @@ namespace ExemplosSobreErros
                 var resultado = x / y;
 
             }
+
             catch (FormatException ex)
             {
-                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("brother! digite um número", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (DivideByZeroException ex)
             {
-                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Não existe divisão por zero", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
             {
@@ -163,7 +166,7 @@ namespace ExemplosSobreErros
             }
             catch (Exception ex)
             {
-                //Tostring mostra da onde foi executado
+                //ToString mostra da onde foi executado
                 MessageBox.Show(ex.ToString());
             }
         }
@@ -185,6 +188,7 @@ namespace ExemplosSobreErros
         private void button11_Click(object sender, EventArgs e)
         {
             ClassExecutaErro classe = new ClassExecutaErro();
+
             try
             {
                 classe.Processar3();
@@ -203,7 +207,8 @@ namespace ExemplosSobreErros
             try
             {
                 cErro.Processar4();
-            }catch(MeuErroException ex)
+            }
+            catch(MeuErroException ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -231,8 +236,15 @@ namespace ExemplosSobreErros
         }
 
         public void Processar2() {
+
+            //if (1 < 2)
+            //{
+            //    throw new Exception("xxxxxx");
+            //}
+
             try
             {
+
                 Convert.ToInt32("A");
             }
             catch (Exception ex)
