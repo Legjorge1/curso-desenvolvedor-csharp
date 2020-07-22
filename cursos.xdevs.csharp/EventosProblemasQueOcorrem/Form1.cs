@@ -40,11 +40,22 @@ namespace EventosProblemasQueOcorrem
 
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
-            classeQueVai.AdicionarNomes(txtNome.Text); 
+            classeQueVai.AdicionarNomes(txtNome.Text);
         }
+
+        private void button1_MouseMove(object sender, MouseEventArgs e)
+        {
+            this.BackColor = Color.Red;
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Blue;
+        }
+
     }
 
-    class ClasseQueVaiSerLido 
+    class ClasseQueVaiSerLido
     {
         public event EventHandler<ClasseEventArgs> EventoOcorreu;
 
@@ -55,7 +66,7 @@ namespace EventosProblemasQueOcorrem
 
         public List<string> ListaNomes
         {
-            get;set;
+            get; set;
         } = new List<string>();
 
         public void AdicionarNomes(string nome)
@@ -76,4 +87,24 @@ namespace EventosProblemasQueOcorrem
             Nome = nome;
         }
     }
+
 }
+
+    ////Explicação de partial
+    //partial class um {
+    //    public int id;
+    //}
+    //partial class um
+    //{
+    //    public string name;
+    //}
+
+    //class dois {
+
+    //    public dois()
+    //    {
+    //        um u = new um();
+    //        u.id = 10;
+    //        u.name = "";
+    //    }
+    //} 
