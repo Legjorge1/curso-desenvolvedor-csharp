@@ -15,7 +15,7 @@ namespace RodarThreadPool
             Stopwatch sw = Stopwatch.StartNew();
             // Vamos chamar diferentes métodos
 
-            RodarComThread(); //13301ms
+            RodarComThread(); //15099ms
 
             Console.WriteLine("Nós realizamos o processo em {0}ms!", sw.ElapsedMilliseconds);
             if (Debugger.IsAttached)
@@ -25,16 +25,6 @@ namespace RodarThreadPool
             }
         }
 
-        static void execucaoSequencial()
-        {
-            double result = 0d;
-            // Chamar uma função e adicionar o resultado
-            result += LerDadosIO();
-            // Chamar outra função e adicionar o resultdo
-            result += FazerCalculosIntensos();
-            // Imprimir o resultado 
-            Console.WriteLine("O resultado é {0}", result);
-        }
 
         static double LerDadosIO()
         {

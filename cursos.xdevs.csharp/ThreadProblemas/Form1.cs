@@ -17,9 +17,7 @@ namespace ThreadProblemas
         {
             InitializeComponent();
         }
-
-
-         double FazerCalculosIntensos()
+        double FazerCalculosIntensos()
         {
             // Nós estamos fazendo calculos intensos
             // com divisões sem sentido
@@ -54,7 +52,7 @@ namespace ThreadProblemas
         }
         private void btn_Click(object sender, EventArgs e)
         {
-            Thread th = new Thread(rodar);
+            Thread th = new Thread(rodarCorretamente);
             th.Start();
         }
     }

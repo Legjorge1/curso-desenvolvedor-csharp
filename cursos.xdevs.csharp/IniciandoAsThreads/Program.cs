@@ -15,9 +15,9 @@ namespace IniciandoAsThreads
             Stopwatch sw = Stopwatch.StartNew();
             // Vamos chamar diferentes métodos
             
-            execucaoSequencial(); //18075ms!
+            //execucaoSequencial(); //20407ms!
 
-            //RodarComThread(); //13301ms
+            RodarComThread(); //16196ms
 
             Console.WriteLine("Nós realizamos o processo em {0}ms!", sw.ElapsedMilliseconds);
             if (Debugger.IsAttached)

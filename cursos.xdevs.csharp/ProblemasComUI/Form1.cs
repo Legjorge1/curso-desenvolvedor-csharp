@@ -22,7 +22,7 @@ namespace ProblemasComUI
             txt.Text = FazerCalculosIntensos().ToString();
         }
 
-        static double FazerCalculosIntensos()
+        double FazerCalculosIntensos()
         {
             // Nós estamos fazendo calculos intensos
             // com divisões sem sentido
