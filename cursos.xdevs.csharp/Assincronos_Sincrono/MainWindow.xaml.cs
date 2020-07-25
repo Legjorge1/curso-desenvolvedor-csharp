@@ -63,8 +63,8 @@ namespace Assincronos_Sincrono
         }
 
         private async Task PegarDadosAsync() {
-            lblum.Content = await SimulandoMetodoDemoradoAsync(); //aguarda para ir até a próxima linha
-            lbldois.Content = await SimulandoMetodoDemoradoAsync();
+            //lblum.Content = await SimulandoMetodoDemoradoAsync(); //aguarda para ir até a próxima linha
+            //lbldois.Content = await SimulandoMetodoDemoradoAsync();
 
             //Exemplo 1
             //var task1 = SimulandoMetodoDemoradoAsync();
@@ -75,10 +75,10 @@ namespace Assincronos_Sincrono
             //lbldois.Content = task2.Result;
 
             //Exemplo2
-            //var task1 = SimulandoMetodoDemoradoAsync();
-            //var task2 = SimulandoMetodoDemoradoAsync();
-            //lblum.Content = await task1;
-            //lbldois.Content = await task2;
+            var task1 = SimulandoMetodoDemoradoAsync();
+            var task2 = SimulandoMetodoDemoradoAsync();
+            lblum.Content = await task1;
+            lbldois.Content = await task2;
         }
 
     }

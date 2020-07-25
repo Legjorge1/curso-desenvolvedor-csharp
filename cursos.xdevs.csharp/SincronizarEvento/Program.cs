@@ -15,7 +15,8 @@ namespace SincronizarEvento
             Stopwatch sw = Stopwatch.StartNew();
             // Vamos chamar diferentes métodos
 
-            RodarComThread(); //15099ms
+            //RodarComThread(); //15099ms
+            RodarComThreadComEventWait();
 
             Console.WriteLine("Nós realizamos o processo em {0}ms!", sw.ElapsedMilliseconds);
             if (Debugger.IsAttached)
@@ -24,8 +25,7 @@ namespace SincronizarEvento
                 Console.ReadKey(true);
             }
         }
-
-
+        
         static double LerDadosIO()
         {
             // Nós estamos simulando I/O colocando nossa thread para dormir.
@@ -81,7 +81,7 @@ namespace SincronizarEvento
             // Calcular o resultado final
             result += result2;
             // Printar o resultado
-            Console.WriteLine("The result is {0}", result);
+            Console.WriteLine("o resultado é {0}", result);
         }
     }
 }

@@ -22,13 +22,15 @@ namespace LockEMonitor
             Console.ReadKey();
         }
 
-        //static void RecursoLidoPelasThreads() {
+        //static void RecursoLidoPelasThreads()
+        //{
         //    //veja o resultado
         //    Thread.Sleep(100);
         //    Console.WriteLine(Environment.TickCount);
         //}
 
-        //static void RecursoLidoPelasThreads() {
+        //static void RecursoLidoPelasThreads()
+        //{
         //    //veja o resultado
         //    lock (_object)
         //    {
@@ -36,7 +38,9 @@ namespace LockEMonitor
         //        Console.WriteLine(Environment.TickCount);
         //    }
         //}
-        static void RecursoLidoPelasThreads() {
+
+        static void RecursoLidoPelasThreads()
+        {
             //veja o resultado
             Monitor.Enter(_object);
             try
@@ -44,11 +48,11 @@ namespace LockEMonitor
                 Thread.Sleep(100);
                 Console.WriteLine(Environment.TickCount);
             }
-            finally  
-            {  
-                Monitor.Exit(_object);  
+            finally
+            {
+                Monitor.Exit(_object);
             }
-}
+        }
 
 
     }

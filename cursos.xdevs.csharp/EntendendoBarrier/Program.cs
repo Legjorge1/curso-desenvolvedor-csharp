@@ -56,7 +56,7 @@ namespace EntendendoBarrier
                 });
             }
             Console.WriteLine("Thread principal {0} está aguardando os participantes!",
-            barrier.ParticipantCount - 1);
+                barrier.ParticipantCount - 1);
             barrier.SignalAndWait(); // Aguardando a primeira fase
             barrier.SignalAndWait(); // Aguardando a segunda fase
             Console.WriteLine("Thread está finalizada!");

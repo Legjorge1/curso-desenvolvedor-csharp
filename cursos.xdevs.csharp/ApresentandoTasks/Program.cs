@@ -15,11 +15,12 @@ namespace ApresentandoTasks
         {
             Stopwatch sw = Stopwatch.StartNew();
 
-            //RodarSequencias();
-            //RodarTasks();
-            //RodarTasksCorretamente();
-            //RodarParallelFor();
-            //RodarParallelForCorretamente();
+            //RodarSequencias(); //51806ms
+            //RodarTasks(); //861ms
+            //RodarTasksCorretamente(); //18591ms
+
+            //RodarParallelFor(); //21895ms
+            //RodarParallelForCorretamente(); //21448ms
 
             Console.WriteLine("Terminamos em {0}ms!", sw.ElapsedMilliseconds);
             Console.ReadKey();
@@ -97,7 +98,6 @@ namespace ApresentandoTasks
             Parallel.For(0, NUMERO_DE_INTERACOES, i => {
                 result += FazerCalculosIntensos();
                 Console.Write(i.ToString() + ", ");
-
             });
             // Printando o resultado
             Console.WriteLine("O Resultado {0}", result);
