@@ -1,0 +1,20 @@
+﻿<Window x:Class="Assincronos_Sincrono.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Assincronos_Sincrono"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnSincrono" Content="Executar Sincrono" HorizontalAlignment="Left" Margin="37,29,0,0" VerticalAlignment="Top" Width="113" Height="36" Click="btnSincrono_Click"/>
+        <Button x:Name="btn_Copy" Content="Executar Assincrono" HorizontalAlignment="Left" Margin="37,86,0,0" VerticalAlignment="Top" Width="113" Height="36" Click="btn_Copy_Click"/>
+        <Label x:Name="lblResultado" Content="Resultado" HorizontalAlignment="Left" Margin="255,52,0,0" VerticalAlignment="Top" Width="509" Height="90" FontSize="48"/>
+        <Button x:Name="btn_Copy1" Content="Executar Assincrono Corretamente" HorizontalAlignment="Left" Margin="37,147,0,0" VerticalAlignment="Top" Width="278" Height="36" Click="btn_Copy_Click"/>
+        <Button x:Name="btn2Sincrono" Content="Sincrono exemplo 2" HorizontalAlignment="Left" Margin="39,223,0,0" VerticalAlignment="Top" Width="217" Height="42" Click="btn2Sincrono_Click"/>
+        <Button x:Name="btn2Assync" Content="Assyncrono exemplo" HorizontalAlignment="Left" Margin="37,282,0,0" VerticalAlignment="Top" Width="217" Height="42" Click="btn2Assync_Click"/>
+        <Label x:Name="lblum" Content="" HorizontalAlignment="Left" Margin="276,223,0,0" VerticalAlignment="Top" Height="39" Width="388"/>
+        <Label x:Name="lbldois" Content="" HorizontalAlignment="Left" Margin="276,282,0,0" VerticalAlignment="Top" Height="39" Width="388"/>
+
+    </Grid>
+</Window>
