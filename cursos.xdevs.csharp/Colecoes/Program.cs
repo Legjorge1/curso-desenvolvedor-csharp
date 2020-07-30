@@ -15,7 +15,7 @@ namespace Colecoes
 
             //Adiciona qualquer objeto
             System.Collections.ArrayList arrayList = new ArrayList();
-            arrayList.Add("string");
+            arrayList.Add("qualquer texto");
             arrayList.Add(2);
             arrayList.Add(true);
 
@@ -23,7 +23,7 @@ namespace Colecoes
             System.Collections.Hashtable hashTable = new Hashtable();
             hashTable.Add("Key", "Value");
             hashTable.Add("Chave", "Valor");
-            hashTable.Add("Chave", 23);
+            hashTable.Add("Chave1", 23);
 
             //Fila - FIFO
             System.Collections.Queue queue = new Queue();
@@ -34,8 +34,8 @@ namespace Colecoes
             //Sorted
             System.Collections.SortedList sorted = new SortedList();
             sorted.Add("Chave", "Valor");
-            sorted.Add(1, "Valor");
-            sorted.Add(true, 098);
+            sorted.Add("!1", "Valor");
+            sorted.Add("true", 098);
 
             //Stack FILO
             System.Collections.Stack stack = new Stack();

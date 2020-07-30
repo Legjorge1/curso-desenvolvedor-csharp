@@ -12,12 +12,20 @@ namespace Colecao_generica_Queue
         static void Main(string[] args)
         {
             // Queue
+            Queue queue1 = new Queue();
+            queue1.Enqueue(1);
+            queue1.Enqueue("1");
+            queue1.Enqueue(new { A= "B"});
 
             //loop
+
 
             //Queue<T>
 
             //loop
         }
+
+
+
     }
 }
