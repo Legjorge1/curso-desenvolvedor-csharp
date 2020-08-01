@@ -20,10 +20,6 @@ namespace UsandoEntiyFrameWork
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnCarregar_Click(object sender, EventArgs e)
         {
@@ -34,7 +30,9 @@ namespace UsandoEntiyFrameWork
         {
             using (var context = new Contexto())
             {
-                dataGridView1.DataSource = context.Datas.ToList();
+                dataGridView1.DataSource = context.Datas
+                    .AsNoTracking()
+                    .ToList();
             }
         }
 
@@ -61,7 +59,7 @@ namespace UsandoEntiyFrameWork
             using (var context = new Contexto())
             {
                 Datas obj = new Datas();
-                obj.Id = 10;
+                obj.Id = 11;
                 obj.Nome = "Diogo";
                 obj.Sobrenome = "Costa";
                 obj.DataNascimento = new DateTime(1983, 09, 11);
@@ -79,7 +77,7 @@ namespace UsandoEntiyFrameWork
         {
             using (var context = new Contexto())
             {
-                var obj = context.Datas.Find(9);
+                var obj = context.Datas.Find(11);
 
                 context.Datas.Remove(obj);
 
@@ -106,29 +104,36 @@ namespace UsandoEntiyFrameWork
         {
             using (var context = new Contexto())
             {
-                var itens = context.Datas.Where(o => o.Nome.Contains("Di"));
-                itens.ToList().ForEach(o => MessageBox.Show(o.Nome + "" + o.Sobrenome));
+                    var itens = context.Datas.Where(o => o.Nome.Contains("Di"));
+                    itens.ToList().ForEach(o => MessageBox.Show(o.Nome + "" + o.Sobrenome));
             }
         }
     }
 
-    public class Datas
-    {
-        [Key]
-        public int Id { get; set; }
 
-        public string Nome { get; set; }
-        public string Sobrenome { get; set; }
-        public DateTime ? DataNascimento { get; set; }
-    }
-
-    class Contexto : DbContext
-    {
-        public Contexto() : base("Contexto")
-        {
-
-        }
-
-        public DbSet<Datas> Datas { get; set; }
-    }
 }
+
+
+public class Datas
+{
+    [Key]
+    public int Id { get; set; }
+
+    public string Nome { get; set; }
+    public string Sobrenome { get; set; }
+    public DateTime? DataNascimento { get; set; }
+}
+
+class Contexto : DbContext
+{
+    public Contexto() : base("Contexto")
+    {
+
+    }
+
+    public DbSet<Datas> Datas { get; set; }
+}
+
+
+
+

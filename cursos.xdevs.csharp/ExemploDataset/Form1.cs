@@ -27,12 +27,12 @@ namespace ExemploDataset
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlDataAdapter da = new SqlDataAdapter("Select * from datas", @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Projetos\Cliente\Cursos\CsharpTwitter\curso-desenvolvedor-csharp\cursos.xdevs.csharp\MexendoComDataBase\meubanquinho.mdf;Integrated Security=True");
+            SqlDataAdapter da = new SqlDataAdapter("Select * from datas", @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Projetos\Git\Integrador\curso-desenvolvedor-csharp\cursos.xdevs.csharp\MexendoComDataBase\meubanquinho.mdf;Integrated Security=True");
 
             SqlCommand insert = new SqlCommand();
             insert.CommandType = CommandType.Text;
             insert.CommandText = "INSERT INTO Datas (Nome, Sobrenome) VALUES (@Nome,  @Sobrenome)";
-            insert.Connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Projetos\Cliente\Cursos\CsharpTwitter\curso-desenvolvedor-csharp\cursos.xdevs.csharp\MexendoComDataBase\meubanquinho.mdf;Integrated Security=True");
+            insert.Connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Projetos\Git\Integrador\curso-desenvolvedor-csharp\cursos.xdevs.csharp\MexendoComDataBase\meubanquinho.mdf;Integrated Security=True");
 
             //Criar os parametros
             insert.Parameters.Add(new SqlParameter("@Nome", SqlDbType.VarChar, 50, "Nome"));
@@ -54,16 +54,16 @@ namespace ExemploDataset
 
             /////////////////////[PULAR] e ver o banco
             //atualizar o database
-            // da.Update(ds.Tables[0]);
+            da.Update(ds.Tables[0]);
 
-            //CarregarDados();
+            CarregarDados();
         }
 
         void CarregarDados()
         {
             DataSet ds = new DataSet();
 
-            SqlDataAdapter da = new SqlDataAdapter("Select * from datas", @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Projetos\Cliente\Cursos\CsharpTwitter\curso-desenvolvedor-csharp\cursos.xdevs.csharp\MexendoComDataBase\meubanquinho.mdf;Integrated Security=True");
+            SqlDataAdapter da = new SqlDataAdapter("Select * from datas", @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Projetos\Git\Integrador\curso-desenvolvedor-csharp\cursos.xdevs.csharp\MexendoComDataBase\meubanquinho.mdf;Integrated Security=True");
             da.Fill(ds);
             dgrid.DataSource = ds.Tables[0];
         }

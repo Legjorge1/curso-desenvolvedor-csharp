@@ -26,7 +26,7 @@ namespace EscrevendoInstrucaoNoBanco
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            connection.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Projetos\Cliente\Cursos\CsharpTwitter\curso-desenvolvedor-csharp\cursos.xdevs.csharp\MexendoComDataBase\meubanquinho.mdf;Integrated Security=True";
+            connection.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Projetos\Git\Integrador\curso-desenvolvedor-csharp\cursos.xdevs.csharp\MexendoComDataBase\meubanquinho.mdf;Integrated Security=True";
             connection.Open();
         }
 
@@ -43,13 +43,16 @@ namespace EscrevendoInstrucaoNoBanco
             //W3
             SqlCommand comm = new SqlCommand();
             comm.CommandText = $@"INSERT INTO DATAS (NOME, SOBRENOME, DATANASCIMENTO) 
-                                  VALUES ('{txtNome.Text}', '{txtSobrenome.Text}', '{dtpCalendar.Value.ToString("yyyy-MM-dd")}')";
+                                  VALUES (@nome, @sobrenome, @data)";
             comm.Connection = connection;
             comm.CommandType = CommandType.Text;
 
             //SQL INJECT
 
             //PARAMETERS
+            comm.Parameters.AddWithValue("@nome", txtNome.Text);
+            comm.Parameters.AddWithValue("@sobrenome", txtSobrenome.Text);
+            comm.Parameters.AddWithValue("@data", dtpCalendar.Value);
 
             //retorna no numero de linnhas afetadas
             comm.ExecuteNonQuery();
@@ -75,15 +78,23 @@ namespace EscrevendoInstrucaoNoBanco
                 {
                     //instanciando um objeto
                     aniver = new Aniversarios();
-                    
-                    Debug.WriteLine(string.Format("Nome: {0} , SobreNome: {1}", dr["Nome"], dr["SobreNome"]));
+
+                    //Debug.WriteLine(string.Format("Nome: {0} , SobreNome: {1}", 
+                    //    dr["Nome"], dr["SobreNome"]));
+
+                    //aniver.Id = Convert.ToInt32( dr["Id"] );
+                    //aniver.Nome = dr["Nome"].ToString();
+                    //aniver.SobreNome = dr["Sobrenome"].ToString();
+                    //if(dr["DataNascimento"] != DBNull.Value)
+                    //    aniver.DataNascimento = Convert.ToDateTime( dr["DataNascimento"] );
 
                     aniver.Id = dr.GetInt32(0);
                     aniver.Nome = dr.GetString(1);
                     aniver.SobreNome = dr.GetString(2);
-                    aniver.DataNascimento = dr.GetDateTime(3);
+                    if (!dr.IsDBNull(3))
+                        aniver.DataNascimento = dr.GetDateTime(3);
 
-                    //adicionando objeto a lista
+                    ////adicionando objeto a lista
                     aniversarios.Add(aniver);
                 }
             }
