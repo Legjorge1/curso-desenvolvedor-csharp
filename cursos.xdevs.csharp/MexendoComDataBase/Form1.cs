@@ -21,9 +21,9 @@ namespace MexendoComDataBase
         {
             //talvez na sua máquina o local esteja diferente, preste atenção na explicação em aula sobre esse assunto
             System.Data.SqlClient.SqlConnection conn = new System.Data.SqlClient.SqlConnection();
-            conn.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Projetos\Cliente\Cursos\CsharpTwitter\curso-desenvolvedor-csharp\cursos.xdevs.csharp\MexendoComDataBase\meubanquinho.mdf;Integrated Security=True";
+            conn.ConnectionString =
+                @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Projetos\Git\Integrador\curso-desenvolvedor-csharp\cursos.xdevs.csharp\MexendoComDataBase\meubanquinho.mdf;Integrated Security=True";
             conn.Open();
-
 
 
             conn.Close();
