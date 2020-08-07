@@ -71,13 +71,14 @@ namespace SerializandoObjetos
             pessoa.UltimoNome = txtsobrenomeserializarxml.Text;
 
             //Colocar em stream
-            StreamWriter stream = new StreamWriter("Pessoa.xml");
+            using (StreamWriter stream = new StreamWriter("Pessoa.xml"))
+            {
+                //serializar
+                XmlSerializer formatter = new XmlSerializer(typeof(Pessoa));
+                formatter.Serialize(stream, pessoa);
 
-            //serializar
-            XmlSerializer formatter = new XmlSerializer(typeof(Pessoa));
-            formatter.Serialize(stream, pessoa);
-
-            stream.Close();
+                //stream.Close();
+            }
         }
 
         private void btnDeserializarXML_Click(object sender, EventArgs e)
@@ -93,7 +94,7 @@ namespace SerializandoObjetos
             stream.Close();
 
             txtnomedeserializarxml.Text = pessoa.PrimeiroNome;
-            txtsobrenomeserializarxml.Text = pessoa.UltimoNome;
+            txtsobrenomedeserializarxml.Text = pessoa.UltimoNome;
         }
 
         private void btnSerializaJson_Click(object sender, EventArgs e)
@@ -174,7 +175,7 @@ namespace SerializandoObjetos
         //[NonSerialized]  //binario
         private int _id;
 
-        //[XmlIgnore] //xml
+        [XmlIgnore] //xml
         public string PrimeiroNome;
         public string UltimoNome;
 
@@ -184,31 +185,31 @@ namespace SerializandoObjetos
         }
 
 
-        //[OnSerializing()]
-        //internal void estouSerializando(StreamingContext context)
-        //{
-        //    MessageBox.Show("estou serializado");
-        //}
+        [OnSerializing()]
+        internal void estouSerializando(StreamingContext context)
+        {
+            MessageBox.Show("estou serializado");
+        }
 
 
-        //[OnSerialized()]
-        //internal void jaSerializei(StreamingContext context)
-        //{
-        //    MessageBox.Show("serializei");
-        //}
+        [OnSerialized()]
+        internal void jaSerializei(StreamingContext context)
+        {
+            MessageBox.Show("serializei");
+        }
 
-        //[OnDeserializing()]
-        //internal void estouDesSerializando(StreamingContext context)
-        //{
-        //    MessageBox.Show("estou desserializado");
-        //}
+        [OnDeserializing()]
+        internal void estouDesSerializando(StreamingContext context)
+        {
+            MessageBox.Show("estou desserializado");
+        }
 
 
-        //[OnDeserialized()]
-        //internal void jaDesSerializei(StreamingContext context)
-        //{
-        //    MessageBox.Show("Deserializei");
-        //}
+        [OnDeserialized()]
+        internal void jaDesSerializei(StreamingContext context)
+        {
+            MessageBox.Show("Deserializei");
+        }
     }
 
     [DataContract]

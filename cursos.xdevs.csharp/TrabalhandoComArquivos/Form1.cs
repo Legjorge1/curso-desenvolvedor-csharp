@@ -161,7 +161,7 @@ namespace TrabalhandoComArquivos
                 if (pasta.ShowDialog() == DialogResult.OK)
                 {
                     richTextBox1.Text = string.Empty;
-                    richTextBox1.Text += d(pasta.SelectedPath);
+                    richTextBox1.Text += string.Join("", d(pasta.SelectedPath));
                 }
             }
 
@@ -170,9 +170,10 @@ namespace TrabalhandoComArquivos
 
         void Apagar(deletarArquivoDelegate d)
         {
-            using (SaveFileDialog save = new SaveFileDialog())
+            using (OpenFileDialog save = new OpenFileDialog())
             {
-                save.InitialDirectory = Environment.CurrentDirectory;
+                //save.InitialDirectory = Environment.CurrentDirectory; //==determinei
+                save.RestoreDirectory = true; //ultima pasta utilizada
 
                 if (save.ShowDialog() == DialogResult.OK)
                 {
@@ -211,12 +212,12 @@ namespace TrabalhandoComArquivos
 
         private void criarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Criar(CriarDirectoryInfo);
+            Criar(CriarDirectory);
         }
 
         private void criarDiretorioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Criar(CriarDirectory);
+            Criar(CriarDirectoryInfo);
         }
 
 
