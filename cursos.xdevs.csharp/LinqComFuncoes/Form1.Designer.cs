@@ -48,9 +48,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Location = new System.Drawing.Point(18, 18);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(132, 46);
+            this.button1.Size = new System.Drawing.Size(198, 71);
             this.button1.TabIndex = 0;
             this.button1.Text = "Count Linq";
             this.button1.UseVisualStyleBackColor = true;
@@ -58,9 +59,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(150, 12);
+            this.button2.Location = new System.Drawing.Point(225, 18);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(132, 46);
+            this.button2.Size = new System.Drawing.Size(198, 71);
             this.button2.TabIndex = 1;
             this.button2.Text = "Count Metodo QB";
             this.button2.UseVisualStyleBackColor = true;
@@ -68,17 +70,19 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(288, 12);
+            this.richTextBox1.Location = new System.Drawing.Point(432, 18);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(252, 462);
+            this.richTextBox1.Size = new System.Drawing.Size(376, 709);
             this.richTextBox1.TabIndex = 2;
             this.richTextBox1.Text = "";
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(150, 64);
+            this.button3.Location = new System.Drawing.Point(225, 98);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(132, 46);
+            this.button3.Size = new System.Drawing.Size(198, 71);
             this.button3.TabIndex = 4;
             this.button3.Text = "Average Metodo QB";
             this.button3.UseVisualStyleBackColor = true;
@@ -86,9 +90,10 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(12, 64);
+            this.button4.Location = new System.Drawing.Point(18, 98);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(132, 46);
+            this.button4.Size = new System.Drawing.Size(198, 71);
             this.button4.TabIndex = 3;
             this.button4.Text = "Average Linq";
             this.button4.UseVisualStyleBackColor = true;
@@ -96,9 +101,10 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(150, 116);
+            this.button5.Location = new System.Drawing.Point(225, 178);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(132, 46);
+            this.button5.Size = new System.Drawing.Size(198, 71);
             this.button5.TabIndex = 6;
             this.button5.Text = "Min Metodo QB";
             this.button5.UseVisualStyleBackColor = true;
@@ -106,9 +112,10 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(12, 116);
+            this.button6.Location = new System.Drawing.Point(18, 178);
+            this.button6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(132, 46);
+            this.button6.Size = new System.Drawing.Size(198, 71);
             this.button6.TabIndex = 5;
             this.button6.Text = "Min Linq";
             this.button6.UseVisualStyleBackColor = true;
@@ -116,9 +123,10 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(150, 168);
+            this.button7.Location = new System.Drawing.Point(225, 258);
+            this.button7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(132, 46);
+            this.button7.Size = new System.Drawing.Size(198, 71);
             this.button7.TabIndex = 8;
             this.button7.Text = "Max Metodo QB";
             this.button7.UseVisualStyleBackColor = true;
@@ -126,9 +134,10 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(12, 168);
+            this.button8.Location = new System.Drawing.Point(18, 258);
+            this.button8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(132, 46);
+            this.button8.Size = new System.Drawing.Size(198, 71);
             this.button8.TabIndex = 7;
             this.button8.Text = "Max Linq";
             this.button8.UseVisualStyleBackColor = true;
@@ -136,9 +145,10 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(150, 220);
+            this.button9.Location = new System.Drawing.Point(225, 338);
+            this.button9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(132, 46);
+            this.button9.Size = new System.Drawing.Size(198, 71);
             this.button9.TabIndex = 10;
             this.button9.Text = "First Metodo QB";
             this.button9.UseVisualStyleBackColor = true;
@@ -146,9 +156,10 @@
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(12, 220);
+            this.button10.Location = new System.Drawing.Point(18, 338);
+            this.button10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(132, 46);
+            this.button10.Size = new System.Drawing.Size(198, 71);
             this.button10.TabIndex = 9;
             this.button10.Text = "First Linq";
             this.button10.UseVisualStyleBackColor = true;
@@ -156,9 +167,10 @@
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(150, 272);
+            this.button11.Location = new System.Drawing.Point(225, 418);
+            this.button11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(132, 46);
+            this.button11.Size = new System.Drawing.Size(198, 71);
             this.button11.TabIndex = 12;
             this.button11.Text = "Last Metodo QB";
             this.button11.UseVisualStyleBackColor = true;
@@ -166,9 +178,10 @@
             // 
             // button12
             // 
-            this.button12.Location = new System.Drawing.Point(12, 272);
+            this.button12.Location = new System.Drawing.Point(18, 418);
+            this.button12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(132, 46);
+            this.button12.Size = new System.Drawing.Size(198, 71);
             this.button12.TabIndex = 11;
             this.button12.Text = "Last Linq";
             this.button12.UseVisualStyleBackColor = true;
@@ -176,9 +189,10 @@
             // 
             // button13
             // 
-            this.button13.Location = new System.Drawing.Point(150, 324);
+            this.button13.Location = new System.Drawing.Point(225, 498);
+            this.button13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(132, 46);
+            this.button13.Size = new System.Drawing.Size(198, 71);
             this.button13.TabIndex = 13;
             this.button13.Text = "Skip / Take Metodo QB";
             this.button13.UseVisualStyleBackColor = true;
@@ -186,9 +200,10 @@
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(150, 376);
+            this.button14.Location = new System.Drawing.Point(225, 578);
+            this.button14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(132, 46);
+            this.button14.Size = new System.Drawing.Size(198, 71);
             this.button14.TabIndex = 14;
             this.button14.Text = "Skipe e Take Metodo QB";
             this.button14.UseVisualStyleBackColor = true;
@@ -196,9 +211,10 @@
             // 
             // button15
             // 
-            this.button15.Location = new System.Drawing.Point(150, 428);
+            this.button15.Location = new System.Drawing.Point(225, 658);
+            this.button15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(132, 46);
+            this.button15.Size = new System.Drawing.Size(198, 71);
             this.button15.TabIndex = 15;
             this.button15.Text = "Distinct Metodo QB";
             this.button15.UseVisualStyleBackColor = true;
@@ -206,9 +222,9 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(547, 484);
+            this.ClientSize = new System.Drawing.Size(820, 745);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.button14);
             this.Controls.Add(this.button13);
@@ -225,6 +241,7 @@
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);

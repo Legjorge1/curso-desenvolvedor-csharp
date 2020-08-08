@@ -46,9 +46,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(14, 61);
+            this.button1.Location = new System.Drawing.Point(21, 94);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(151, 28);
+            this.button1.Size = new System.Drawing.Size(226, 43);
             this.button1.TabIndex = 0;
             this.button1.Text = "Filtrar com Linq";
             this.button1.UseVisualStyleBackColor = true;
@@ -56,9 +57,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(12, 12);
+            this.button2.Location = new System.Drawing.Point(18, 18);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(151, 28);
+            this.button2.Size = new System.Drawing.Size(226, 43);
             this.button2.TabIndex = 1;
             this.button2.Text = "exemplo loop";
             this.button2.UseVisualStyleBackColor = true;
@@ -66,17 +68,19 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(354, 12);
+            this.richTextBox1.Location = new System.Drawing.Point(531, 18);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(248, 247);
+            this.richTextBox1.Size = new System.Drawing.Size(370, 378);
             this.richTextBox1.TabIndex = 2;
             this.richTextBox1.Text = "";
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(14, 95);
+            this.button3.Location = new System.Drawing.Point(21, 146);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(151, 28);
+            this.button3.Size = new System.Drawing.Size(226, 43);
             this.button3.TabIndex = 3;
             this.button3.Text = "Linq com where composto";
             this.button3.UseVisualStyleBackColor = true;
@@ -84,9 +88,10 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(14, 129);
+            this.button4.Location = new System.Drawing.Point(21, 198);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(151, 28);
+            this.button4.Size = new System.Drawing.Size(226, 43);
             this.button4.TabIndex = 4;
             this.button4.Text = "Linq com double where";
             this.button4.UseVisualStyleBackColor = true;
@@ -94,9 +99,10 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(14, 163);
+            this.button5.Location = new System.Drawing.Point(21, 251);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(151, 28);
+            this.button5.Size = new System.Drawing.Size(226, 43);
             this.button5.TabIndex = 5;
             this.button5.Text = "Linq com where e função";
             this.button5.UseVisualStyleBackColor = true;
@@ -104,9 +110,10 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(14, 197);
+            this.button6.Location = new System.Drawing.Point(21, 303);
+            this.button6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(151, 28);
+            this.button6.Size = new System.Drawing.Size(226, 43);
             this.button6.TabIndex = 6;
             this.button6.Text = "Ordenar com Linq";
             this.button6.UseVisualStyleBackColor = true;
@@ -114,9 +121,10 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(14, 231);
+            this.button7.Location = new System.Drawing.Point(21, 355);
+            this.button7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(151, 28);
+            this.button7.Size = new System.Drawing.Size(226, 43);
             this.button7.TabIndex = 7;
             this.button7.Text = "Ordenar com Linq um Objeto";
             this.button7.UseVisualStyleBackColor = true;
@@ -124,9 +132,10 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(171, 61);
+            this.button8.Location = new System.Drawing.Point(256, 94);
+            this.button8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(177, 28);
+            this.button8.Size = new System.Drawing.Size(266, 43);
             this.button8.TabIndex = 8;
             this.button8.Text = "Filtrar com Metodo BQ";
             this.button8.UseVisualStyleBackColor = true;
@@ -134,9 +143,10 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(171, 231);
+            this.button9.Location = new System.Drawing.Point(256, 355);
+            this.button9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(177, 28);
+            this.button9.Size = new System.Drawing.Size(266, 43);
             this.button9.TabIndex = 13;
             this.button9.Text = "Ordenar c/ Metodo BQ um Objeto";
             this.button9.UseVisualStyleBackColor = true;
@@ -144,9 +154,10 @@
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(171, 197);
+            this.button10.Location = new System.Drawing.Point(256, 303);
+            this.button10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(177, 28);
+            this.button10.Size = new System.Drawing.Size(266, 43);
             this.button10.TabIndex = 12;
             this.button10.Text = "Ordenar com Metodo BQ";
             this.button10.UseVisualStyleBackColor = true;
@@ -154,9 +165,10 @@
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(171, 163);
+            this.button11.Location = new System.Drawing.Point(256, 251);
+            this.button11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(177, 28);
+            this.button11.Size = new System.Drawing.Size(266, 43);
             this.button11.TabIndex = 11;
             this.button11.Text = "Metodo BQ where e função";
             this.button11.UseVisualStyleBackColor = true;
@@ -164,9 +176,10 @@
             // 
             // button12
             // 
-            this.button12.Location = new System.Drawing.Point(171, 129);
+            this.button12.Location = new System.Drawing.Point(256, 198);
+            this.button12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(177, 28);
+            this.button12.Size = new System.Drawing.Size(266, 43);
             this.button12.TabIndex = 10;
             this.button12.Text = "Metodo BQ double where";
             this.button12.UseVisualStyleBackColor = true;
@@ -174,9 +187,10 @@
             // 
             // button13
             // 
-            this.button13.Location = new System.Drawing.Point(171, 95);
+            this.button13.Location = new System.Drawing.Point(256, 146);
+            this.button13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(177, 28);
+            this.button13.Size = new System.Drawing.Size(266, 43);
             this.button13.TabIndex = 9;
             this.button13.Text = "Metodo BQ where composto";
             this.button13.UseVisualStyleBackColor = true;
@@ -184,9 +198,9 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(622, 270);
+            this.ClientSize = new System.Drawing.Size(919, 415);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button11);
@@ -201,6 +215,7 @@
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);

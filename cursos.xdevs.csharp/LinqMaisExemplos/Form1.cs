@@ -44,6 +44,7 @@ namespace LinqMaisExemplos
 
             };
         }
+
         private void button1_Click(object sender, EventArgs e)
         {
             var LocaisOrdenados = from h in Locais

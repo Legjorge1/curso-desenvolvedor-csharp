@@ -67,6 +67,7 @@ namespace ResolvendoComLinq
                                where i % 2 == 0 
                                where i > 5
                                select i;
+
             foreach (int i in numerosPares)
             {
                 richTextBox1.Text += i.ToString() + Environment.NewLine;
@@ -93,7 +94,6 @@ namespace ResolvendoComLinq
         {
             int[] meuArray = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             var numerosPares = from i in meuArray
-                               where i % 2 == 0
                                orderby i descending
                                select i;
             foreach (int i in numerosPares)
@@ -104,6 +104,7 @@ namespace ResolvendoComLinq
 
         private void button7_Click(object sender, EventArgs e)
         {
+
             List<Local> Locais = new List<Local>()
              {
              new Local() { Estado = "Bahia", Sigla = "BA" },
@@ -114,8 +115,14 @@ namespace ResolvendoComLinq
 
              };
 
+            //FirstOrDefault
+            Local local = (from a in Locais
+                         where a.Estado == "123"
+                         select a).FirstOrDefault();
+
+
             var LocaisOrdenados = from h in Locais
-                                  orderby h.Estado ascending, h.Sigla ascending
+                                  orderby h.Estado ascending, h.Sigla descending
                                    select h;
             foreach (Local estados in LocaisOrdenados)
             {
@@ -185,7 +192,9 @@ namespace ResolvendoComLinq
         private void button10_Click(object sender, EventArgs e)
         {
             int[] meuArray = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            var numerosPares = meuArray.OrderBy(i => i);
+            
+            var numerosPares = meuArray.OrderByDescending(i => i);
+
             foreach (int i in numerosPares)
             {
                 richTextBox1.Text += i.ToString() + Environment.NewLine;
@@ -204,7 +213,8 @@ namespace ResolvendoComLinq
 
              };
 
-            var LocaisOrdenados = Locais.OrderBy(o => o.Estado).ThenBy(o => o.Sigla);
+            var LocaisOrdenados = Locais.OrderBy(o => o.Estado).ThenByDescending(o => o.Sigla);
+
             foreach (Local estados in LocaisOrdenados)
             {
                 richTextBox1.Text += (estados.Estado + ", " + estados.Sigla) + Environment.NewLine;
